@@ -929,7 +929,20 @@ localStorage.setItem(
         );
 
         createCalendar(year);
-    </script>
+      function unlockDiary() {
+        const enteredPassword =
+            document.getElementById("passwordInput").value;
+
+        if (enteredPassword === "muwahh") {
+            document.getElementById("lockScreen").style.display = "none";
+            document.getElementById("diaryContent").style.display = "block";
+        } else {
+            document.getElementById("wrongPassword").textContent =
+                "Wrong password! Go away! 😤";
+        }
+    }
+
+</script>
 
 </body>
 </html>
