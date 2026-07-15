@@ -367,7 +367,39 @@
 
 <body>
 
-    <div id="pageContent">
+<!-- ===========================
+     PASSWORD SCREEN
+=========================== -->
+
+<div id="lockScreen">
+
+    <div class="lockBox">
+
+        <div class="flower">🌸</div>
+
+        <h1>Mawi's Secret Diary</h1>
+
+        <p>This diary belongs to Mawi.</p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter Password"
+        >
+
+        <button onclick="unlockDiary()">
+            💗 Unlock Diary
+        </button>
+
+        <p id="wrongPassword"></p>
+
+    </div>
+
+</div>
+
+<div id="diaryContent" style="display:none;">
+
+<div id="pageContent">
 
         <header>
             <h1>mawi's calendar</h1>
